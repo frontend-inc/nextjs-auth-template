@@ -3,7 +3,7 @@ import { hasEnvVars } from "@/utils/supabase/check-env-vars";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import { createClient } from "@/utils/supabase/server";
-import AuthButtonClient from "./auth/auth-button-client";
+import AuthModal from "./auth/auth-modal";
 
 export default async function AuthButton() {
   const supabase = await createClient();
@@ -60,5 +60,5 @@ export default async function AuthButton() {
     );
   } 
   
-  return <AuthButtonClient />;
+  return <AuthModal />;
 }

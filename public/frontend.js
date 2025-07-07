@@ -1,6 +1,6 @@
 (function() {
   const script = document.createElement('script');
   const timestamp = new Date().getTime();
-  script.src = `https://frontend-ai.s3.us-east-2.amazonaws.com/frontend.js?t=${timestamp}`;
+  script.src = `https://supabase.frontend.co/storage/v1/object/public/assets/frontend.js?t=${timestamp}`;
   document.body.appendChild(script);
 })();
